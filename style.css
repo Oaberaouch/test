@@ -9,9 +9,8 @@ ul,li{
     padding: 0 !important;
 }
 
-.first-section{
-    display: table-row; 
-    height: 10%;
+.first_section,.carousel-inner,.carousel-item,.second_section{
+ height: 100vh;
 }
 
 .header_list{
@@ -107,12 +106,18 @@ img {
 }
 
 .sectionTitle{
+    display: grid;
+    align-items: center;
 	text-align: center;
     font-size: 3vw;
+    height: 8vw;
 }
 
 .nav-bar{
-    background-color: darkgray;
+    background-color: rgba(187, 185, 185, 0.57);
+    position: absolute;
+    z-index: 12;
+    width: 100%;
 }
 
 .second-section-btn-scroll {
@@ -120,3 +125,91 @@ img {
     justify-content: center;
 }
 
+.arousel-item.img{
+    background-size: 100%;
+
+}
+
+.second-section-btn-scroll{
+    position: absolute;
+    color: #FFF !important;
+    z-index: 9999;
+    bottom:30px;
+    right:48%;
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(187, 185, 185, 0.57);
+}
+
+
+.containet {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-content {
+    display: grid;
+    width: 26vw;
+    height: 20vw;
+    /* background-color: aquamarine; */
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.icon {
+    display: flex;
+    justify-self: center;
+    width: 7vw;
+    height: 7vw;
+    /* background-color: #dad8d8;  */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px #2C3747 solid;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: rgba(168, 166, 166, 0.205);
+}
+
+.imageS2{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 70%;
+}
+
+.iconTitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-text,.iconTitle {
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.seeMore {
+    justify-self: center;
+    width: 12vw;
+    height: 3vw;
+    background-color: transparent;
+    border: 1px #000 solid;
+    cursor: pointer;
+    font-size: 1.3vw;
+}
+
+
+.seeMore:focus {
+    outline: none;
+}
+
+.seeMore:hover {
+    background-color: #000;
+    color: #FFF;
+}
