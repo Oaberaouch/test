@@ -24,15 +24,23 @@ ul,li{
     align-items: center;
     justify-content: center;
 }
-.nav-bar{
 
-}
 
 .header_list li {
+    cursor: pointer;
     display: inline;
     display: flex;
     align-items: center;
     font-size: 1.4vw;
+}
+
+.siideTitle{
+text-align: center;
+}
+
+.header_list li:hover {
+    color:#fff;
+    text-decoration: underline;
 }
 
 .header_list .logo {
@@ -40,6 +48,7 @@ ul,li{
 }
 img {
     vertical-align: middle;
+    width: 9vw;
 }
 
 .slideTitle {
@@ -52,6 +61,40 @@ img {
 	align-items: center;
 }
 
+.first-btn {
+    width: 17vw;
+    height: 5vw;
+    font-size: 3vw;
+    border-radius: 1vw;
+    background-color: rgba(128, 128, 128, 0.575);
+    color: #dad8d8;
+}
+
+.second-btn {
+    width: 17vw;
+    height: 5vw;
+    font-size: 3vw;
+    border-radius: 1vw;
+    background-color: rgba(128, 128, 128, 0.575);
+    color: #dad8d8;
+}
+
+.second-btn:hover {
+    background-color: rgba(64, 63, 63, 0.798);
+}
+
+.second-btn:focus {
+    outline: none;
+}
+
+.first-btn:hover {
+    background-color: rgba(64, 63, 63, 0.798);
+}
+
+.first-btn:focus {
+    outline: none;
+}
+
 .textBox{
     position: absolute;
     top: 50%;
@@ -60,13 +103,20 @@ img {
     color: #fff;
     padding: 1rem;
 	font-weight: bold;
-	font-size: 3vw	;
+	font-size: 3vw;
 }
 
 .sectionTitle{
 	text-align: center;
+    font-size: 3vw;
 }
 
 .nav-bar{
     background-color: darkgray;
 }
+
+.second-section-btn-scroll {
+    display: flex;
+    justify-content: center;
+}
+
