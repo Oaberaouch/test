@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #FFF !important;
+}
+
 ul,li{
     margin: 0 !important;
     padding: 0 !important;
@@ -244,7 +248,7 @@ img {
 .secondContainer{
     display: grid;
     align-items: flex-end;
-    height: 50%;
+    height: 100%;
 }
 
 .img2 {
@@ -253,19 +257,31 @@ img {
 }
 
 .thirdSectionpart1 {
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
     width: 100%;
-    height: 35vh;
+    height: 30vh;
+}
+
+.thirdTitle {
+    font-weight: bold;
+    color: #000;
+    font-size: 2rem;
 }
 
 .thirdSectionpart2 {
     background-color: red;
     display: flex;
     width: 100%;
-    height: 65vh;
+    height: 70vh;
 }
 
 .leftPart {
+    display: flex;
     width: 60%;
     height: 100%;
     background-color: #2C3747;
@@ -274,5 +290,30 @@ img {
 .rightPart {
     width: 40%;
     height: 100%;
-    background-color: green;
+    background-image: url(/shutterstock_317335031.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.topPart,.bottomPart {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
+}
+
+.leftPartParts {
+    width: 100%;
+    height: 59%;
+    background-color: #dad8d8;
+    border: 1px #000 solid;
+}
+
+.iconP {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    background-color: #2C3747;
+    width: 6vw;
+    height: 12vh;
 }
