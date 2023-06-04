@@ -402,4 +402,10 @@ width: 100%;
         .container-content {
             height: 19.7vw;
         }
+        .thirdSectionpart1 {
+            height:20vh;
+        }
+        .subtitle {
+            font-size: 3vw;
+        }
 }
