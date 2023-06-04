@@ -178,7 +178,7 @@ img {
 
 .container-content {
     display: grid;
-    width: 26vw;
+    width: 30%;
     height: 20vw;
     /* background-color: aquamarine; */
     align-items:center;
@@ -247,8 +247,15 @@ img {
 
 .secondContainer{
     display: grid;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+}
+
+.secondContainerImg {
+    display: grid;
+    justify-self: center;
+    width: 70%
 }
 
 .img2 {
@@ -274,10 +281,16 @@ img {
 }
 
 .thirdSectionpart2 {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     width: 100%;
     height: 70vh;
+}
+
+.partContainer {
+    width: 90%;
+    height: 75%;
+    /* background-color: red; */
 }
 
 .leftPart {
@@ -303,17 +316,90 @@ width: 100%;
 }
 
 .leftPartParts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 59%;
     background-color: #dad8d8;
     border: 1px #000 solid;
 }
 
-.iconP {
-    position: relative;
-    left: 50px;
-    top: 50px;
-    background-color: #2C3747;
-    width: 6vw;
-    height: 12vh;
+.partHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.textPartsContainer {
+    padding-left: 1vw;
+    width: auto;
+    display: grid;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.iconP1 {
+    background-image: url(/computer-lock.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.iconP2 {
+    background-image: url(/computer-user.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.iconP3 {
+    background-image: url(/house-computer.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.iconP4 {
+    background-image: url(/computer-lock.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.partTitle {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.partSubtitle {
+    font-size: 0.8rem;
+}
+
+.parBody {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.partParagraph {
+    display: flex;
+    justify-self: flex-end;
+    width: 73%;
+}
+
+@media (max-width: 1090px) {
+        .containet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-content {
+            height: 19.7vw;
+        }
 }
