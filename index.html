@@ -15,7 +15,7 @@
 <body>
 	<section class="first_section">
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-			<nav class="nav-bar">
+			<!-- <nav class="nav-bar topnav" id="myTopnav">
 				<ul class="header_list">
 					<li class="logo"><img src="omar-logo.svg" alt=""></li>
 					<li class="home">home</li>
@@ -24,7 +24,17 @@
 					<li class="contactUs">contact us</li>
 					<li class="help">help</li>
 				</ul>
-			</nav>
+			</nav> -->
+			<div class="topnav nav-bar" id="myTopnav">
+				<a href="#home"><img src="omar-logo.svg" alt=""></a>
+				<a href="#home" class="active">Home</a>
+				<a href="#news">News</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				  <i class="fa fa-bars"></i>
+				</a>
+			  </div>
 			<div class="carousel-inner">
 			  <div class="carousel-item active">
 				<!-- <img class="d-block w-100 slider-img" src="/slider-img.jpg" alt="First slide"> -->
@@ -188,7 +198,14 @@ document.querySelector(".second-section-btn-scroll").addEventListener("click",sc
 		  });
 		}
 
-
+		function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 	  </script>
 </body>
 
