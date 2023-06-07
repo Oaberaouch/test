@@ -157,6 +157,11 @@ img {
 
 }
 
+.containet {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .second-section-btn-scroll{
     position: absolute;
     color: #FFF !important;
@@ -297,7 +302,7 @@ img {
     display: flex;
     width: 60%;
     height: 100%;
-    background-color: #2C3747;
+    /* background-color: #2C3747; */
 }
 
 .rightPart {
@@ -407,5 +412,24 @@ width: 100%;
         }
         .subtitle {
             font-size: 3vw;
+        }
+        .thirdSectionpart2 {
+            width: 100%;
+            flex-direction: column;
+            height: 90vw;
+            font-size: 1.6vh;
+        }
+        .leftPart {
+            width: 100%;
+            padding-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .leftPartParts {
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+        .rightPart {
+            width: 100%;
         }
 }

@@ -46,8 +46,8 @@
 				<!-- <img class="d-block w-100 slider-img" src="slider-img.jpg" alt="Third slide"> -->
 				<div class="textBox">hi</div>
 			  </div>
-			  <div class="second-section-btn-scroll">
-				<div class="down-arrrow-icon"><a href="#secondSection"><i class="material-icons" style="font-size:4vw">keyboard_arrow_down</i></a></div>
+			 <div class="second-section-btn-scroll">
+				<div class="down-arrrow-icon"> <a href="#secondSection" id="sectionClick" >  <i class="material-icons" style="font-size:4vw">keyboard_arrow_down</i></a></div>
 			</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -173,6 +173,24 @@
 			<div class="rightPart"></div>
 		</div>
 	</section>
+
+	<script>
+
+document.querySelector(".second-section-btn-scroll").addEventListener("click",scrollToSection(event)
+		)
+		function scrollToSection(event) {
+		  event.preventDefault();
+		  const targetId = event.target.getAttribute('href');
+		  const targetElement = document.querySelector(targetId);
+		  targetElement.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		  });
+		}
+
+
+	  </script>
 </body>
+
 </html>
 
